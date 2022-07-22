@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TV</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="qr_info">
+    <property name="geometry">
+     <rect>
+      <x>1340</x>
+      <y>500</y>
+      <width>480</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="car_frame">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>20</y>
+      <width>640</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sale_info">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>1230</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="shop_info">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>530</y>
+      <width>1230</width>
+      <height>260</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="user_info">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>800</y>
+      <width>1230</width>
+      <height>260</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_sale_info">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>1000</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SALE_INFO</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_car_frame">
+    <property name="geometry">
+     <rect>
+      <x>1530</x>
+      <y>1000</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CAR_FRAME</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_user_info">
+    <property name="geometry">
+     <rect>
+      <x>1740</x>
+      <y>1000</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>USER_INFO</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_qr_info">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>1040</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>QR_INFO</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_shop_info">
+    <property name="geometry">
+     <rect>
+      <x>1530</x>
+      <y>1040</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SHOP_INFO</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_clear">
+    <property name="geometry">
+     <rect>
+      <x>1740</x>
+      <y>1040</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CLEAR</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
