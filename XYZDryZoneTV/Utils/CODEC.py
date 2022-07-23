@@ -11,10 +11,10 @@ class _Tcp:
 @singleton
 class _Codec:
     FRAME = b'\xe5'
-    SALE_INFO = b'\xe6'
-    SHOP_INFO = b'\xe7'
+    WELCOME = b'\xe6'
+    CAR_IN = b'\xe7'
     QR_LINK = b'\xe8'
-    USER_INFO = b'\xe9'
+    CAR_PLATE = b'\xe9'
     PAY_SUCCEED = b'\xea'
     TCP = _Tcp()
 

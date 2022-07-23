@@ -26,22 +26,22 @@ class TvNUC:
         data = encode(head=CODEC.QR_LINK, qr_link=qr_link)
         self._network.tcp.send(data)
 
-    def set_sale_info(self, sale_info: str):
-        data = encode(head=CODEC.SALE_INFO, sale_info=sale_info)
+    def set_welcome(self):
+        data = encode(head=CODEC.WELCOME)
         self._network.tcp.send(data)
 
-    def set_shop_info(self, shop_info: str):
-        data = encode(head=CODEC.SHOP_INFO, shop_info=shop_info)
+    def set_car_in(self, car_plate: str):
+        data = encode(head=CODEC.CAR_IN, car_plate=car_plate)
         self._network.tcp.send(data)
 
-    def set_user_info(self, user_info: str):
-        data = encode(head=CODEC.USER_INFO, user_info=user_info)
+    def set_car_plate(self, car_plate: str):
+        data = encode(head=CODEC.CAR_PLATE, car_plate=car_plate)
         self._network.tcp.send(data)
 
     def set_car_frame(self, frame: np.array):
         data = encode(head=CODEC.FRAME, frame=frame)
         self._network.tcp.send(data)
 
-    def set_pay_succeed(self, succeed: bool):
-        data = encode(head=CODEC.PAY_SUCCEED, succeed=succeed)
+    def set_pay_succeed(self, succeed: bool, car_plate: str):
+        data = encode(head=CODEC.PAY_SUCCEED, succeed=succeed, car_plate=car_plate)
         self._network.tcp.send(data)

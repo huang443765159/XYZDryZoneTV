@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="XYZDryZoneTV",
-    version="2022.07.12.15.12",
+    version="2022.07.23.12.22",
     author="WillEE",
     url="https://github.com/WillEEEEEE/XYZDryZoneTV.git",
     packages=setuptools.find_packages(),

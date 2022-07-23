@@ -35,18 +35,18 @@ class TV:
         if head == CODEC.FRAME:  # 电视机上显示是车的画面, 并显示二维码
             self._qr_is_show = True
             self.sign.frame.emit(rx_msg['frame'])
-        elif head == CODEC.SALE_INFO:
-            self.sign.sale_info.emit(rx_msg['sale_info'])
+        elif head == CODEC.WELCOME:
+            self.sign.welcome.emit(True)
         elif head == CODEC.QR_LINK:
             result = requests.get(rx_msg['qr_link'])
             with open('./_IMAGES/qr.png', 'wb') as f:
                 f.write(result.content)
-        elif head == CODEC.SHOP_INFO:
-            self.sign.shop_info.emit(rx_msg['shop_info'])
-        elif head == CODEC.USER_INFO:
-            self.sign.user_info.emit(rx_msg['user_info'])
+        elif head == CODEC.CAR_IN:
+            self.sign.car_in.emit(rx_msg['car_plate'])
+        elif head == CODEC.CAR_PLATE:
+            self.sign.car_plate.emit(rx_msg['car_plate'])
         elif head == CODEC.PAY_SUCCEED:  # 用户支付成功，关闭二维码
-            self.sign.pay_succeed.emit(rx_msg['succeed'])
+            self.sign.pay_succeed.emit(rx_msg['succeed'], rx_msg['car_plate'])
             self._qr_is_show = False
 
     def get_show_qr(self) -> bool:
