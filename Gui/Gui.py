@@ -37,7 +37,7 @@ class Gui:
         self._ui.btn_qr_info.clicked.connect(self._qr_info)
         self._ui.btn_pay_succeed.clicked.connect(self._pay_succeed)
         self._ui.btn_car_in.clicked.connect(self._car_in)
-        self._signal_frame(frame=cv2.imread('_IMAGES/car.jpg'))
+        # self._signal_car_in(car_plate='京A123456')
 
     # SIGNAL
     def _signal_frame(self, frame: np.array):  # 要同时显示二维码和车辆照片
@@ -58,7 +58,7 @@ class Gui:
                               text=car_plate + ',欢迎使用小象洗车', draw_pos=(350, 550))
 
     def _signal_car_in(self, car_plate: str):
-        self._signal_show_img(img_path='./_IMAGES/PlateAndIn.jpg', size=(1900, 970),
+        self._signal_show_img(img_path='./_IMAGES/PlateAndIN.jpg', size=(1900, 970),
                               text=car_plate, draw_pos=(900, 700))
 
     def _signal_welcome(self, is_welcome: bool):
@@ -86,7 +86,7 @@ class Gui:
         self._show_img(img_path='./_IMAGES/PlatePaySucceed.jpg', size=(1900, 970))
 
     def _car_in(self):
-        self._show_img(img_path='./_IMAGES/PlateAndIn.jpg', size=(1900, 970))
+        self._show_img(img_path='./_IMAGES/PlateAndIN.jpg', size=(1900, 970))
 
     def _show_img(self, img_path: str, size: tuple):
         frame = cv2.imread(img_path)
